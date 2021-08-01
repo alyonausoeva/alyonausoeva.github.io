@@ -1,0 +1,23 @@
+@import "src/styles/variables";
+
+.Table {
+  &-Box {
+    width: 100%;
+    overflow-x: auto;
+  }
+}
+.table {
+  thead th {
+    text-align: center;
+    color: $main-blue-color;
+    vertical-align: middle !important;
+    background-color: $background-blue-color;
+  }
+  tr {
+    cursor: pointer;
+  }
+  tr:hover {
+    background-color: $background-pink-color;
+  }
+  text-align: center;
+}

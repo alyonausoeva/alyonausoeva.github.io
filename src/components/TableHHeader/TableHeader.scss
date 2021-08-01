@@ -1,0 +1,30 @@
+@import "src/styles/variables";
+
+.page-link {
+  color: $main-blue-color !important;
+}
+.Table {
+  &-header {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-pages {
+    display: flex;
+    color: $main-blue-color;
+  }
+  &-progress {
+    color: $main-pink-color;
+    border-bottom: 0.2rem solid $main-pink-color;
+    margin-left: 1rem;
+  }
+  &-userIcon {
+    width: 2rem;
+  }
+  &-select {
+    border: 0rem;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    width: 6rem;
+  }
+}

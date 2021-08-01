@@ -1,0 +1,4 @@
+export const STORE_KEY = "DATA";
+
+export const FETCH_DATA_SUCCESS = `${STORE_KEY}/FETCH_DATA_SUCCESS`;
+export const FETCH_DATA_ERROR = `${STORE_KEY}/FETCH_DATA_ERROR`;

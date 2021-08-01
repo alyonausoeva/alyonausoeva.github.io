@@ -1,0 +1,30 @@
+@import "src/styles/variables", "src/styles/breakpoints";
+
+.Header {
+  &-Buttons {
+    display: flex;
+    flex-direction: column;
+    @include media-breakpoint-up(md) {
+      margin-right: 2rem;
+    }
+  }
+  &-Button {
+    display: flex;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+
+  &-Button_color_blue {
+    border: 0.2rem solid $main-blue-color;
+    color: $main-blue-color;
+  }
+  &-Icon {
+    margin-right: 0.5rem;
+  }
+  &-Button_color_pink {
+    border: 0.2rem solid $main-pink-color;
+    color: $main-pink-color;
+  }
+}

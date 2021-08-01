@@ -1,0 +1,30 @@
+$grid-breakpoints: (
+  xxs: 0,
+  xs: 375px,
+  sm: 414px,
+  md: 768px,
+  lg: 960px,
+  mil: 1100px,
+  xl: 1366px
+);
+
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+  $min: map-get($breakpoints, $name);
+
+  @return if($min != 0, $min, null);
+}
+
+@mixin media-breakpoint-up($name, $breakpoints: $grid-breakpoints) {
+  $min: breakpoint-min($name, $breakpoints);
+
+  @if $min {
+    @media screen and (min-width: $min) {
+      @content;
+    }
+  }
+
+  @else {
+    @content;
+  }
+}
+

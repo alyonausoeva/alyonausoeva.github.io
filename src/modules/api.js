@@ -1,0 +1,142 @@
+export const getRows = async () => {
+  let response = await [
+    {
+      name: "Денис",
+      progress: [
+        {
+          issue: "1",
+          class: "Урок 1",
+          classesNumber: 90,
+          success: 80,
+          errors: 34,
+          innacur: 33,
+          timeSpent: "89 мин",
+          terrGot: "1000",
+        },
+        {
+          issue: "2",
+          class: "Урок 2",
+          classesNumber: 45,
+          success: 12,
+          errors: 10,
+          innacur: 30,
+          timeSpent: "100 мин",
+          terrGot: "1000",
+        },
+        {
+          issue: "3",
+          class: "Урок 3",
+          classesNumber: 49,
+          success: 25,
+          errors: 15,
+          innacur: 13,
+          timeSpent: "100 мин",
+          terrGot: "1000",
+        },
+        {
+          issue: "4",
+          class: "Урок 4",
+          classesNumber: 30,
+          success: 25,
+          errors: 19,
+          innacur: 33,
+          timeSpent: "100 мин",
+          terrGot: "1000",
+        },
+        {
+          issue: "5",
+          class: "Урок 5",
+          classesNumber: 30,
+          success: 25,
+          errors: 19,
+          innacur: 33,
+          timeSpent: "100 мин",
+          terrGot: "1000",
+        },
+        {
+          issue: "6",
+          class: "Урок 6",
+          classesNumber: 30,
+          success: 25,
+          errors: 19,
+          innacur: 33,
+          timeSpent: "100 мин",
+          terrGot: "1000",
+        },
+      ],
+    },
+    {
+      name: "Алексей",
+      progress: [
+        {
+          issue: "1",
+          class: "Урок 1",
+          classesNumber: 100,
+          success: 90,
+          errors: 19,
+          innacur: 33,
+          timeSpent: "100 мин",
+          terrGot: "1000",
+        },
+        {
+          issue: "2",
+          class: "Урок 2",
+          classesNumber: 30,
+          success: 25,
+          errors: 19,
+          innacur: 33,
+          timeSpent: "100 мин",
+          terrGot: "1000",
+        },
+        {
+          issue: "3",
+          class: "Урок 3",
+          classesNumber: 30,
+          success: 25,
+          errors: 19,
+          innacur: 33,
+          timeSpent: "100 мин",
+          terrGot: "1000",
+        },
+        {
+          issue: "4",
+          class: "Урок 4",
+          classesNumber: 30,
+          success: 25,
+          errors: 19,
+          innacur: 33,
+          timeSpent: "100 мин",
+          terrGot: "1000",
+        },
+        {
+          issue: "5",
+          class: "Урок 5",
+          classesNumber: 30,
+          success: 25,
+          errors: 19,
+          innacur: 33,
+          timeSpent: "100 мин",
+          terrGot: "1000",
+        },
+        {
+          issue: "6",
+          class: "Урок 6",
+          classesNumber: 30,
+          success: 25,
+          errors: 19,
+          innacur: 33,
+          timeSpent: "100 мин",
+          terrGot: "1000",
+        },
+      ],
+    },
+  ];
+  response = response.sort(function (a, b) {
+    var nameA = a.name.toLowerCase(),
+      nameB = b.name.toLowerCase();
+    if (nameA < nameB) return -1;
+    if (nameA > nameB) return 1;
+    return 0;
+  });
+  return response;
+};
